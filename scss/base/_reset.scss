@@ -1,0 +1,58 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+}
+
+#backtop {
+  border: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+  border-radius: 45%;
+  background-color: #ffffffb3;
+  opacity: 0;
+  transition: 0.5s;
+}
+#backtop i {
+  color: rgb(187, 35, 57, 0.7);
+  font-size: 1.875rem;
+}
+
+
+
+@media (min-width: 100px) {
+  :root {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 576px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    font-size: 16px !important;
+  }
+}
