@@ -2,10 +2,10 @@
 
 @mixin btn {
   padding: 8px 32px;
-  font-family: "Cera Round Pro";
+  font-family: "Cera Round Pro", sans-serif;
   font-style: normal;
   font-weight: $fw-700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 175%;
   letter-spacing: 0.04em;
   background-color: transparent;
@@ -21,7 +21,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: $fw-600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 175%;
   letter-spacing: 0.05em;
   text-transform: capitalize;
@@ -33,7 +33,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: $fw-600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 175%;
   letter-spacing: 0.05em;
   text-transform: capitalize;
@@ -51,24 +51,47 @@
 }
 
 @mixin headstyle {
-  font-family: "Cera Round Pro";
+  font-family: "Cera Round Pro", sans-serif;
   font-style: normal;
   font-weight: $fw-500;
-  font-size: 48px;
+  font-size: 3rem;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: $headingtwo-color;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+@mixin headstyletwo {
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: $fw-500;
+  font-size: 3rem;
   line-height: 130%;
   letter-spacing: 0.03em;
   text-transform: capitalize;
   font-feature-settings: "tnum" on, "lnum" on;
+  color: $primary-color;
 }
 
 @mixin contentstyle {
-  font-family: "Cera Round Pro";
+  font-family: "Cera Round Pro", sans-serif;
   font-style: normal;
   font-weight: $fw-700;
-  font-size: 23px;
+  font-size: 1.4375rem;
   line-height: 130%;
   letter-spacing: 0.04em;
   text-transform: capitalize;
   font-feature-settings: "tnum" on, "lnum" on;
+  color: $headingtwo-color;
+}
+
+@mixin hstlyle {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: $fw-600;
+  font-size: 1.125rem;
+  line-height: 25px;
+  text-align: center;
   color: $headingtwo-color;
 }

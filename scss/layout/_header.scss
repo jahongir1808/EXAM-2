@@ -9,15 +9,34 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  .flex-btn {
+    display: flex !important;
+    justify-content: space-between !important;
+    .flex-bt {
+      display: flex !important;
+      justify-content: flex-end !important;
+    }
+  }
+}
+
+.container-fluid::after, .container::after, aside::after, footer::after, header::after, section::after,.container-fluid::after, .container::after, aside::after, footer::after, header::after, section::after {
+  display: none;
+  clear: both;
+  content: "";
+}
+
+.dropdown-toggle::before {
+  display: none;
 }
 
 .navbar-shrink {
+  z-index: 99;
   .navbar {
     padding: 5px 0;
     transition: 0.5s;
   }
   .bg-body-tertiary {
-    box-shadow: 0 3px 3px 0 rgba($color: #d47575, $alpha: 1.0);
+    box-shadow: 0 3px 3px 0 rgba($color: #d47575, $alpha: 1);
   }
 }
 

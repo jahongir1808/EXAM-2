@@ -6,10 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/home.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4.5.1/css/metro-all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/home.min.css" />
     <title>Document</title>
   </head>
   <body>
@@ -17,25 +35,477 @@
       <a href="#"><i class="uil uil-arrow-up"></i></a>
     </button>
     <header>
-      <nav  w3-include-html="nav.html" id="navbar"></nav>
+      <nav w3-include-html="nav.html" id="navbar"></nav>
       <div id="home">
-        <div class="container home d-flex align-items-center flex-column flex-lg-row row-gap-5">
+        <div
+          class="container home d-flex align-items-center flex-column flex-lg-row row-gap-5"
+        >
           <div class="home__left">
             <div class="home__left-content text-center text-sm-start">
-              <h4 class="">Chase the new Flavour</h4>
-              <h1 >The key to Fine dining</h1>
-              <p>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
-              <a href="#">Explore Menu</a>
+              <h4 class="home__left-smallheading">Chase the new Flavour</h4>
+              <h1 class="home__left-heading">The key to Fine dining</h1>
+              <p class="home__left-text">
+                Sit tellus lobortis sed senectus vivamus molestie. Condimentum
+                volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
+                aliquam amet tellus
+              </p>
+              <a class="home__left-btn" href="#">Explore Menu</a>
             </div>
           </div>
           <div class="home__right">
-            <img class="" src="images/home/home-img.png" alt="">
+            <img class="" src="images/home/home-img.png" alt="" />
           </div>
         </div>
       </div>
     </header>
+    <section id="popular">
+      <div class="container">
+        <h2 class="popular__heading m-0 text-center text-sm-start">
+          Popular Dishes
+        </h2>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="popular__card d-grid row-gap-2">
+              <img class="w-100" src="images/home/popular-img1.png" alt="" />
+              <h4 class="popular__card-heading m-0">
+                Barbecue Shish kebab Shashlik Skewer
+              </h4>
+              <div
+                class="popular__card-stars d-flex column-gap-1 justify-content-center"
+              >
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+              </div>
+              <p class="popular__card-price text-center mb-0">$12.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="popular__card d-grid row-gap-2">
+              <img class="w-100" src="images/home/popular-img2.png" alt="" />
+              <h4 class="popular__card-heading m-0">
+                Barbecue Shish kebab Shashlik Skewer
+              </h4>
+              <div
+                class="popular__card-stars d-flex column-gap-1 justify-content-center"
+              >
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/star.svg" alt="" />
+              </div>
+              <p class="popular__card-price text-center mb-0">$10.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="popular__card d-grid row-gap-2">
+              <img class="w-100" src="images/home/popular-img3.png" alt="" />
+              <h4 class="popular__card-heading m-0">
+                Barbecue Shish kebab Shashlik Skewer
+              </h4>
+              <div
+                class="popular__card-stars d-flex column-gap-1 justify-content-center"
+              >
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/star.svg" alt="" />
+              </div>
+              <p class="popular__card-price text-center mb-0">$11.5</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="popular__card d-grid row-gap-2">
+              <img class="w-100" src="images/home/popular-img4.png" alt="" />
+              <h4 class="popular__card-heading m-0">
+                Barbecue Shish kebab Shashlik Skewer
+              </h4>
+              <div
+                class="popular__card-stars d-flex column-gap-1 justify-content-center"
+              >
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/star.svg" alt="" />
+              </div>
+              <p class="popular__card-price text-center mb-0">$12.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="popular__card d-grid row-gap-2">
+              <img class="w-100" src="images/home/popular-img5.png" alt="" />
+              <h4 class="popular__card-heading m-0">
+                Barbecue Shish kebab Shashlik Skewer
+              </h4>
+              <div
+                class="popular__card-stars d-flex column-gap-1 justify-content-center"
+              >
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+              </div>
+              <p class="popular__card-price text-center mb-0">$11.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="popular__card d-grid row-gap-2">
+              <img class="w-100" src="images/home/popular-img6.png" alt="" />
+              <h4 class="popular__card-heading m-0">
+                Barbecue Shish kebab Shashlik Skewer
+              </h4>
+              <div
+                class="popular__card-stars d-flex column-gap-1 justify-content-center"
+              >
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/star.svg" alt="" />
+              </div>
+              <p class="popular__card-price text-center mb-0">$13.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="popular__card d-grid row-gap-2">
+              <img class="w-100" src="images/home/popular-img7.png" alt="" />
+              <h4 class="popular__card-heading m-0">
+                Barbecue Shish kebab Shashlik Skewer
+              </h4>
+              <div
+                class="popular__card-stars d-flex column-gap-1 justify-content-center"
+              >
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/star.svg" alt="" />
+              </div>
+              <p class="popular__card-price text-center mb-0">$8.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="popular__card d-grid row-gap-2">
+              <img class="w-100" src="images/home/popular-img1.png" alt="" />
+              <h4 class="popular__card-heading m-0">
+                Barbecue Shish kebab Shashlik Skewer
+              </h4>
+              <div
+                class="popular__card-stars d-flex column-gap-1 justify-content-center"
+              >
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+                <img src="images/home/fullstar.svg" alt="" />
+              </div>
+              <p class="popular__card-price text-center mb-0">$12.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="regular">
+      <div class="container">
+        <div class="regular">
+          <h2 class="regular__heading m-0 text-center text-sm-start">
+            Our Regular Menu Pack
+          </h2>
+        </div>
+        <ul data-role="tabs" data-tabs-type="pills" data-expand="true">
+          <li><a href="#_target_1">All</a></li>
+          <li><a href="#_target_2">Shawarma</a></li>
+          <li><a href="#_target_3">Turk Kebab</a></li>
+          <li><a href="#_target_4">Hamburger Kebab</a></li>
+          <li><a href="#_target_5">Doner kebab</a></li>
+          <li><a href="#_target_6">Shish kebab</a></li>
+          <li><a href="#_target_7">French fries Pizza</a></li>
+          <li><a href="#_target_8">Desserts</a></li>
+        </ul>
+        <div class="border bd-default no-border-top">
+          <div id="_target_1">
+            <div class="regular__cards">
+              <div class="regular__cards-card d-grid row-gap-2">
+                <img class="regular__card-img" src="images/home/regular-img1.png" alt="" />
+                <h4 class="regular__card-heading m-0 text-center">
+                  Barbecue Shish kebab Shashlik Skewer
+                </h4>
+                <div
+                  class="regular__card-stars d-flex column-gap-1 justify-content-center"
+                >
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                </div>
+                <p class="regular__card-price text-center mb-0">$12.00</p>
+              </div>
+              <div class="regular__cards-card d-grid row-gap-2">
+                <img class="regular__card-img" src="images/home/regular-img2.png" alt="" />
+                <h4 class="regular__card-heading m-0 text-center">
+                  Barbecue Shish kebab Shashlik Skewer
+                </h4>
+                <div
+                  class="regular__card-stars d-flex column-gap-1 justify-content-center"
+                >
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                </div>
+                <p class="regular__card-price text-center mb-0">$12.00</p>
+              </div>
+              <div class="regular__cards-card d-grid row-gap-2">
+                <img class="regular__card-img" src="images/home/regular-img3.png" alt="" />
+                <h4 class="regular__card-heading m-0 text-center">
+                  Barbecue Shish kebab Shashlik Skewer
+                </h4>
+                <div
+                  class="regular__card-stars d-flex column-gap-1 justify-content-center"
+                >
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                </div>
+                <p class="regular__card-price text-center mb-0">$12.00</p>
+              </div>
+              <div class="regular__cards-card d-grid row-gap-2">
+                <img class="regular__card-img" src="images/home/regular-img4.png" alt="" />
+                <h4 class="regular__card-heading m-0 text-center">
+                  Barbecue Shish kebab Shashlik Skewer
+                </h4>
+                <div
+                  class="regular__card-stars d-flex column-gap-1 justify-content-center"
+                >
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                </div>
+                <p class="regular__card-price text-center mb-0">$12.00</p>
+              </div>
+              <div class="regular__cards-card d-grid row-gap-2">
+                <img class="regular__card-img" src="images/home/regular-img5.png" alt="" />
+                <h4 class="regular__card-heading m-0 text-center">
+                  Barbecue Shish kebab Shashlik Skewer
+                </h4>
+                <div
+                  class="regular__card-stars d-flex column-gap-1 justify-content-center"
+                >
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                </div>
+                <p class="regular__card-price text-center mb-0">$12.00</p>
+              </div>
+              <div class="regular__cards-card d-grid row-gap-2">
+                <img class="regular__card-img" src="images/home/regular-img6.png" alt="" />
+                <h4 class="regular__card-heading m-0 text-center">
+                  Barbecue Shish kebab Shashlik Skewer
+                </h4>
+                <div
+                  class="regular__card-stars d-flex column-gap-1 justify-content-center"
+                >
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                </div>
+                <p class="regular__card-price text-center mb-0">$12.00</p>
+              </div>
+              <div class="regular__cards-card d-grid row-gap-2">
+                <img class="regular__card-img" src="images/home/regular-img7.png" alt="" />
+                <h4 class="regular__card-heading m-0 text-center">
+                  Barbecue Shish kebab Shashlik Skewer
+                </h4>
+                <div
+                  class="regular__card-stars d-flex column-gap-1 justify-content-center"
+                >
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                </div>
+                <p class="regular__card-price text-center mb-0">$12.00</p>
+              </div>
+              <div class="regular__cards-card d-grid row-gap-2">
+                <img class="regular__card-img" src="images/home/regular-img8.png" alt="" />
+                <h4 class="regular__card-heading m-0 text-center">
+                  Barbecue Shish kebab Shashlik Skewer
+                </h4>
+                <div
+                  class="regular__card-stars d-flex column-gap-1 justify-content-center"
+                >
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                </div>
+                <p class="regular__card-price text-center mb-0">$12.00</p>
+              </div>
+              <div class="regular__cards-card d-grid row-gap-2">
+                <img class="regular__card-img" src="images/home/regular-img9.png" alt="" />
+                <h4 class="regular__card-heading m-0 text-center">
+                  Barbecue Shish kebab Shashlik Skewer
+                </h4>
+                <div
+                  class="regular__card-stars d-flex column-gap-1 justify-content-center"
+                >
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                </div>
+                <p class="regular__card-price text-center mb-0">$12.00</p>
+              </div>
+              <div class="regular__cards-card d-grid row-gap-2">
+                <img class="regular__card-img" src="images/home/regular-img10.png" alt="" />
+                <h4 class="regular__card-heading m-0 text-center">
+                  Barbecue Shish kebab Shashlik Skewer
+                </h4>
+                <div
+                  class="regular__card-stars d-flex column-gap-1 justify-content-center"
+                >
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                </div>
+                <p class="regular__card-price text-center mb-0">$12.00</p>
+              </div>
+              <div class="regular__cards-card d-grid row-gap-2">
+                <img class="regular__card-img" src="images/home/regular-img11.png" alt="" />
+                <h4 class="regular__card-heading m-0 text-center">
+                  Barbecue Shish kebab Shashlik Skewer
+                </h4>
+                <div
+                  class="regular__card-stars d-flex column-gap-1 justify-content-center"
+                >
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                </div>
+                <p class="regular__card-price text-center mb-0">$12.00</p>
+              </div>
+              <div class="regular__cards-card d-grid row-gap-2">
+                <img class="regular__card-img" src="images/home/regular-img12.png" alt="" />
+                <h4 class="regular__card-heading m-0 text-center">
+                  Barbecue Shish kebab Shashlik Skewer
+                </h4>
+                <div
+                  class="regular__card-stars d-flex column-gap-1 justify-content-center"
+                >
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                  <img src="images/home/fullstar.svg" alt="" />
+                </div>
+                <p class="regular__card-price text-center mb-0">$12.00</p>
+              </div>
+            </div>
+          </div>
+          <div id="_target_2">
+            The shield is a post-apocalyptic nanomachine.
+          </div>
+          <div id="_target_3">
+            Cream soup is just not the same without basil
+          </div>
+          <div id="_target_4">A falsis, calceus altus racana.</div>
+          <div id="_target_5">
+            The shield is a post-apocalyptic nanomachine.
+          </div>
+          <div id="_target_6">
+            Cream soup is just not the same without basil
+          </div>
+          <div id="_target_7">A falsis, calceus altus racana.</div>
+          <div id="_target_8">
+            The shield is a post-apocalyptic nanomachine.
+          </div>
+        </div>
+      </div>
+    </section>
     <footer w3-include-html="footer.html"></footer>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.korzh.com/metroui/v4.5.1/js/metro.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          400: {
+            items: 2,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+          },
+          400: {
+            items: 2,
+            nav: false,
+          },
+          600: {
+            items: 3,
+            nav: false,
+          },
+          1000: {
+            items: 4,
+            nav: true,
+            loop: false,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
