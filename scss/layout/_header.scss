@@ -5,21 +5,18 @@ header {
   background-color: $primary-color !important;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  .flex-btn {
-    display: flex !important;
-    justify-content: space-between !important;
-    .flex-bt {
-      display: flex !important;
-      justify-content: flex-end !important;
-    }
-  }
-}
-
-.container-fluid::after, .container::after, aside::after, footer::after, header::after, section::after,.container-fluid::after, .container::after, aside::after, footer::after, header::after, section::after {
+.container-fluid::after,
+.container::after,
+aside::after,
+footer::after,
+header::after,
+section::after,
+.container-fluid::after,
+.container::after,
+aside::after,
+footer::after,
+header::after,
+section::after {
   display: none;
   clear: both;
   content: "";

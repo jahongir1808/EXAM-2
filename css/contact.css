@@ -59,21 +59,18 @@ header {
   background-color: #bb2339 !important;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-nav .flex-btn {
-  display: flex !important;
-  justify-content: space-between !important;
-}
-nav .flex-btn .flex-bt {
-  display: flex !important;
-  justify-content: flex-end !important;
-}
-
-.container-fluid::after, .container::after, aside::after, footer::after, header::after, section::after, .container-fluid::after, .container::after, aside::after, footer::after, header::after, section::after {
+.container-fluid::after,
+.container::after,
+aside::after,
+footer::after,
+header::after,
+section::after,
+.container-fluid::after,
+.container::after,
+aside::after,
+footer::after,
+header::after,
+section::after {
   display: none;
   clear: both;
   content: "";
