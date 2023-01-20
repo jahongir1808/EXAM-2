@@ -185,16 +185,17 @@
 }
 
 #video {
-  // position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  padding: 322px 0;
+  background-image: url(../../images/home/video-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   .video {
-    max-width: 1600px;
     .btnssss {
-      position: relative;
-      padding: 322px 0;
-      background-image: url(../../images/home/video-bg.png);
-      background-repeat: no-repeat;
-      background-position: center;
       button {
         display: flex;
         align-items: center;
