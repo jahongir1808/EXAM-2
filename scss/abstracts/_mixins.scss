@@ -6,6 +6,8 @@
 
 @mixin btn {
   padding: 8px 32px;
+  max-width: 149px;
+  white-space: nowrap;
   font-family: "Cera Round Pro", sans-serif;
   font-style: normal;
   font-weight: $fw-700;

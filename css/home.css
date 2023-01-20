@@ -450,6 +450,8 @@ section::after {
 }
 #gericht .gericht-btn a {
   padding: 8px 32px;
+  max-width: 149px;
+  white-space: nowrap;
   font-family: "Cera Round Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -667,10 +669,11 @@ section::after {
 }
 
 #video {
+  margin-bottom: 120px !important;
+  padding: 322px 0;
   max-width: 1600px;
   margin: 0 auto;
   position: relative;
-  padding: 322px 0;
   background-image: url(../../images/home/video-bg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -712,6 +715,84 @@ section::after {
 }
 #video .video .modal-dialog .modal-content {
   background-color: #bb2339;
+}
+
+.custom-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#gallery {
+  background-color: #F4F4F4;
+}
+#gallery .gallery {
+  padding: 130px 0 130px 10px;
+}
+@media (min-width: 992px) {
+  #gallery .gallery {
+    padding: 130px 0 130px 50px;
+  }
+}
+@media (min-width: 1200px) {
+  #gallery .gallery {
+    padding: 130px 0 130px 150px;
+  }
+}
+@media (min-width: 1300px) {
+  #gallery .gallery {
+    padding: 130px 0 130px 310px;
+  }
+}
+#gallery .gallery__content-description {
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4375rem;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #242424;
+}
+#gallery .gallery__content-heading {
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #242424;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+#gallery .gallery__content-text {
+  max-width: 491px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #aaaaaa;
+}
+#gallery .gallery__content-btn {
+  padding: 8px 32px;
+  max-width: 149px;
+  white-space: nowrap;
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  background-color: transparent;
+  color: #242424;
+  border: 1px solid #bb2339;
+  border-radius: 100px;
+}
+#gallery .gallery .owl-theme .owl-dots,
+#gallery .gallery .owl-theme .owl-nav {
+  display: none;
 }
 
 @media (min-width: 992px) {
