@@ -1,10 +1,21 @@
 @use "../global.scss";
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 @use "../components/home-cards";
 @use "../components/home-regular-cards";
 @use "../components/home-gericht-card";
 @use "../components/home-photogallery-card";
+
+.spoon__img {
+  position: absolute;
+  right: 0;
+  top: -170px;
+  display: none;
+  @media (min-width: 576px) {
+    display: block;
+  }
+}
 
 #home {
   padding: 153px 0 237px;
@@ -56,14 +67,124 @@
       }
     }
     &__right {
+      .home__right-img {
+        max-width: none;
+      }
       @media (max-width: 992px) {
-        img {
+        .home__right-img {
           width: 100%;
         }
       }
     }
   }
 }
+
+#happy {
+  .owl-theme .owl-nav {
+    transition: $trs;
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+      margin: 0;
+    }
+  }
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev {
+    margin-top: 20px;
+    padding: 0px 15px !important;
+    background: 0 0;
+    color: $headingtwo-color;
+    border: 2px solid #646464;
+    border-radius: 6px;
+    font-size: 1.5625rem;
+    transition: $trs;
+  }
+
+  .owl-theme .owl-nav [class*="owl-"]:hover {
+    background: 0 0;
+    color: 0 0;
+    border: 2px solid $primary-color;
+    text-decoration: none;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    background: $text-color;
+    transition: $trs;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span {
+    width: 16px;
+    height: 2px;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: $headingtwo-color;
+  }
+  .owl-theme .owl-dots {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    @media (min-width: 600px) {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    @media (min-width: 768px) {
+      margin-top: 0;
+    }
+  }
+  padding: 100px 0 90px;
+  background-color: $happy-bg;
+  .happy {
+    &__content {
+      margin-bottom: 60px;
+      &-description {
+        @include contentstyle;
+      }
+      &-heading {
+        @include headstyle;
+      }
+    }
+    &__card {
+      background-color: #ffffff;
+      padding: 30px 50px 30px 20px;
+      &-heading {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: $fw-600;
+        font-size: 1.5rem;
+        line-height: 26px;
+        color: #333333;
+      }
+      &-text {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: $fw-400;
+        font-size: 0.875rem;
+        line-height: 22px;
+        color: #333333b3;
+      }
+      i {
+        color: #333333b3;
+      }
+      .views__calendar-text {
+        @include viewtext;
+      }
+      .views__clock-text {
+        @include viewtext;
+      }
+      .views__view-text {
+        @include viewtext;
+      }
+    }
+  }
+}
+
+
 
 // @media (min-width: 100px) {
 //   :root {

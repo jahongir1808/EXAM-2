@@ -6,6 +6,9 @@
     font-weight: 500;
     border-radius: 100px;
     background: $primary-color;
+    a {
+      color: #FFFFFF;
+    }
   }
   .tabs-expand:not(.vertical):not(.bottom) ul.tabs-pills > li .tabs {
     border: 1px solid $primary-color;
@@ -18,7 +21,7 @@
     border: 1px solid #bb2339;
     border-radius: 100px;
     &:hover {
-        background: $primary-color;
+      background: $primary-color;
     }
   }
   .tabs {
@@ -30,13 +33,12 @@
     padding: 10px 30px;
     color: $headingtwo-color;
   }
-  .tabs-expand>ul.tabs-list {
+  .tabs-expand > ul.tabs-list {
     gap: 10px;
     display: grid !important;
     grid-template-columns: 1fr;
   }
-  padding: 120px 0;
-  background-color: $regular-bodybg;
+  @include sectionpadding;
   .regular {
     &__heading {
       @include headstyletwo;
@@ -59,6 +61,9 @@
       .regular__card-img {
         width: 100%;
       }
+      .regular__card-price {
+        @include stylecardsprice;
+      }
     }
   }
 }
@@ -72,12 +77,11 @@
     .regular__cards {
       grid-template-columns: repeat(2, 1fr);
     }
-    .tabs-expand>ul.tabs-list {
+    .tabs-expand > ul.tabs-list {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 }
-
 
 @media (min-width: 450px) {
   #regular {
@@ -92,7 +96,7 @@
     .regular__cards {
       grid-template-columns: repeat(2, 1fr);
     }
-    .tabs-expand>ul.tabs-list {
+    .tabs-expand > ul.tabs-list {
       grid-template-columns: repeat(4, 1fr);
     }
   }
@@ -108,7 +112,7 @@
 
 @media (min-width: 1250px) {
   #regular {
-    .tabs-expand>ul.tabs-list {
+    .tabs-expand > ul.tabs-list {
       grid-template-columns: repeat(8, 1fr);
     }
   }
