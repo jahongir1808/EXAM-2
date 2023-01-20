@@ -152,15 +152,19 @@ section::after {
   box-shadow: 0 0 0 0.1rem rgba(59, 59, 59, 0.2509803922);
 }
 
+.owl-nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  .owl-nav {
+    display: block;
+  }
+}
+
 .owl-theme .owl-nav {
   position: absolute;
   top: -65px;
   right: 0;
-}
-@media (max-width: 560px) {
-  .owl-theme .owl-nav {
-    top: -80px;
-  }
 }
 
 .owl-carousel .owl-nav button.owl-next,
@@ -208,11 +212,6 @@ section::after {
   font-feature-settings: "tnum" on, "lnum" on;
   color: #bb2339;
   padding-bottom: 40px;
-}
-@media (max-width: 560px) {
-  #popular .popular__heading {
-    padding-bottom: 80px;
-  }
 }
 #popular .popular__card {
   padding: 20px 20px 40px 20px;
