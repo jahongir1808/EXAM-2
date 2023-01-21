@@ -67,6 +67,10 @@ input:focus {
   border-radius: 50%;
   background: #ff727d;
   animation: ldio-8gsj946k6k 1s linear infinite;
+  @media (max-width: 500px) {
+    width: 20px;
+    height: 20px;
+  }
 }
 .ldio-8gsj946k6k div:nth-child(1) > div {
   left: 148px;
@@ -154,6 +158,10 @@ input:focus {
   transform: translateZ(0) scale(1);
   backface-visibility: hidden;
   transform-origin: 0 0; /* see note above */
+  @media (max-width: 500px) {
+    width: 50%;
+    height: 50%;
+  }
 }
 .ldio-8gsj946k6k div {
   box-sizing: content-box;
