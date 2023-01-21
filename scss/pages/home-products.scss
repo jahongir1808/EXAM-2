@@ -1,3 +1,9 @@
 @use "../global.scss";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 @use "../components/home-products-card";
+@use "../components/home-photogallery-card";
 
+.gallery-top {
+    margin: 295px 0 150px;
+}

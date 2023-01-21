@@ -3,7 +3,7 @@ html {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
 }
 
@@ -12,6 +12,10 @@ button {
 }
 ul {
   list-style-type: none;
+}
+
+input:focus {
+  outline: none;
 }
 
 #backtop {
@@ -30,8 +34,6 @@ ul {
   color: rgb(187, 35, 57, 0.7);
   font-size: 1.875rem;
 }
-
-
 
 @media (min-width: 100px) {
   :root {
@@ -54,5 +56,12 @@ ul {
 @media (min-width: 992px) {
   :root {
     font-size: 16px !important;
+  }
+}
+
+.mb-gallery {
+  margin-bottom: 120px;
+  @media (min-width: 768px) {
+    margin-bottom: 240px !important;
   }
 }

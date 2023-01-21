@@ -8,18 +8,176 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/home-products.min.css">
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4.5.1/css/metro-all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/home-products.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Menu</title>
   </head>
   <body>
     <button id="backtop">
-      <a href="#"><img src="images/home/backtop.svg" alt="backtop" /></a>
+      <a href="#"><i class="uil uil-arrow-up"></i></a>
     </button>
     <header w3-include-html="nav.html"></header>
-
+    <section id="gallery" class="gallery-top mb-gallery">
+      <div class="container">
+        <div class="gallery d-flex flex-column flex-md-row row-gap-5">
+          <div class="gallery__content d-grid align-items-center w-50-md">
+            <h3 class="gallery__content-description">Instagram</h3>
+            <img width="40" height="9" src="images/home/spoon-red.svg" alt="" />
+            <h2 class="gallery__content-heading">Photo Gallery</h2>
+            <p class="gallery__content-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+              mattis ipsum turpis elit elit scelerisque egestas mu.
+            </p>
+            <a class="gallery__content-btn" href="">View More</a>
+          </div>
+          <div class="owl-carousel owl-theme w-50-md">
+            <div class="item">
+              <div class="gallery__card">
+                <img src="images/home/gallery-img1.png" alt="" />
+                <div class="gallery__hover">
+                  <div class="gallery__hover-icon">
+                    <i class="uil uil-instagram"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="gallery__card">
+                <img src="images/home/gallery-img2.png" alt="" />
+                <div class="gallery__hover">
+                  <div class="gallery__hover-icon">
+                    <i class="uil uil-instagram"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="gallery__card">
+                <img src="images/home/gallery-img1.png" alt="" />
+                <div class="gallery__hover">
+                  <div class="gallery__hover-icon">
+                    <i class="uil uil-instagram"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="gallery__card">
+                <img src="images/home/gallery-img2.png" alt="" />
+                <div class="gallery__hover">
+                  <div class="gallery__hover-icon">
+                    <i class="uil uil-instagram"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="gallery__card">
+                <img src="images/home/gallery-img1.png" alt="" />
+                <div class="gallery__hover">
+                  <div class="gallery__hover-icon">
+                    <i class="uil uil-instagram"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer w3-include-html="footer.html"></footer>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.korzh.com/metroui/v4.5.1/js/metro.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $("#gallery .owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          200: {
+            items: 2.5,
+          },
+          400: {
+            items: 3.5,
+          },
+          576: {
+            items: 4.5,
+          },
+          768: {
+            items: 2.5,
+          },
+          1100: {
+            items: 3.5,
+          },
+        },
+      });
+
+      $("#gallery .owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1.5,
+            nav: true,
+          },
+          200: {
+            items: 2.5,
+            nav: true,
+          },
+          400: {
+            items: 3.5,
+            nav: true,
+          },
+          576: {
+            items: 4.5,
+            nav: true,
+          },
+          768: {
+            items: 2.5,
+            nav: true,
+          },
+          1100: {
+            items: 3.5,
+            nav: true,
+            loop: false,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

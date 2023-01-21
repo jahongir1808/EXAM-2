@@ -1,7 +1,30 @@
 @use "../abstracts/variables" as *;
 
 @mixin sectionpadding {
-  padding: 120px 0 ;
+  padding: 120px 0;
+}
+
+@mixin headingpages {
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: $headingtwo-color;
+}
+
+@mixin activtext {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
 }
 
 @mixin btn {
