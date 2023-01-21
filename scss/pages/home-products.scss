@@ -28,7 +28,8 @@
 #menu {
   .tabs-expand:not(.vertical):not(.bottom) ul.tabs-pills > li.active {
     border: none;
-    background: 0 0;
+    max-width: none;
+    background: white;
     border-radius: 100px;
     a {
       color: #242424;
@@ -43,17 +44,23 @@
     transition: $trs;
     background: transparent;
     border: none;
+    width: 50%;
     // border: 1px solid #ffffff;
     // border-radius: 100px;
     &:hover {
       background: 0 0;
+    }
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+    @media (max-width: 500px) {
+      width: 50%;
     }
   }
   .tabs {
     background-color: transparent;
   }
   .tabs > ul.tabs-list > li > a {
-    width: 70%;
     white-space: nowrap;
     gap: 10px;
     padding: 10px 30px;
@@ -64,12 +71,7 @@
       background: white;
       color: #242424;
     }
-    @media (max-width: 992px) {
-      width: 100%;
-    }
-    @media (max-width: 500px) {
-      width: 50%;
-    }
+    
   }
   .tabs-expand > ul.tabs-list {
     padding: 50px 40px;

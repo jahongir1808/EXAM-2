@@ -1277,7 +1277,8 @@ section::after {
 }
 #menu .tabs-expand:not(.vertical):not(.bottom) ul.tabs-pills > li.active {
   border: none;
-  background: 0 0;
+  max-width: none;
+  background: white;
   border-radius: 100px;
 }
 #menu .tabs-expand:not(.vertical):not(.bottom) ul.tabs-pills > li.active a {
@@ -1292,15 +1293,25 @@ section::after {
   transition: 0.3s;
   background: transparent;
   border: none;
+  width: 50%;
 }
 #menu .tabs-expand:not(.vertical):not(.bottom) ul.tabs-pills > li:hover {
   background: 0 0;
+}
+@media (max-width: 992px) {
+  #menu .tabs-expand:not(.vertical):not(.bottom) ul.tabs-pills > li {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  #menu .tabs-expand:not(.vertical):not(.bottom) ul.tabs-pills > li {
+    width: 50%;
+  }
 }
 #menu .tabs {
   background-color: transparent;
 }
 #menu .tabs > ul.tabs-list > li > a {
-  width: 70%;
   white-space: nowrap;
   gap: 10px;
   padding: 10px 30px;
@@ -1311,16 +1322,6 @@ section::after {
 #menu .tabs > ul.tabs-list > li > a:hover {
   background: white;
   color: #242424;
-}
-@media (max-width: 992px) {
-  #menu .tabs > ul.tabs-list > li > a {
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  #menu .tabs > ul.tabs-list > li > a {
-    width: 50%;
-  }
 }
 #menu .tabs-expand > ul.tabs-list {
   padding: 50px 40px;
