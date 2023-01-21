@@ -1305,7 +1305,7 @@ section::after {
 }
 @media (max-width: 500px) {
   #menu .tabs-expand:not(.vertical):not(.bottom) ul.tabs-pills > li {
-    width: 50%;
+    width: 100%;
   }
 }
 #menu .tabs {
@@ -1324,13 +1324,20 @@ section::after {
   color: #242424;
 }
 #menu .tabs-expand > ul.tabs-list {
-  padding: 50px 40px;
-  grid-gap: 20px;
   border: none;
   display: grid !important;
+  grid-gap: 20px;
   grid-template-columns: 1fr;
-  background-color: #bb2339;
-  border-radius: 20px;
+}
+@media (max-width: 500px) {
+  #menu .tabs-expand > ul.tabs-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  #menu .tabs-expand > ul.tabs-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 #menu .menu {
   margin-top: 120px;
@@ -1342,6 +1349,11 @@ section::after {
   #menu .menu {
     grid-template-columns: 1fr;
   }
+}
+#menu .menu .menu-tabs {
+  padding: 50px 40px;
+  background-color: #bb2339;
+  border-radius: 20px;
 }
 #menu .menu .menu-tabs .menu__heading {
   font-family: "Cera Round Pro", sans-serif;

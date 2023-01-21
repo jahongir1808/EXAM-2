@@ -54,7 +54,7 @@
       width: 100%;
     }
     @media (max-width: 500px) {
-      width: 50%;
+      width: 100%;
     }
   }
   .tabs {
@@ -71,16 +71,18 @@
       background: white;
       color: #242424;
     }
-    
   }
   .tabs-expand > ul.tabs-list {
-    padding: 50px 40px;
-    grid-gap: 20px;
     border: none;
     display: grid !important;
+    grid-gap: 20px;
     grid-template-columns: 1fr;
-    background-color: $primary-color;
-    border-radius: 20px;
+    @media (max-width: 500px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   @include sectionpadding;
   .menu {
@@ -92,6 +94,9 @@
       grid-template-columns: 1fr;
     }
     .menu-tabs {
+      padding: 50px 40px;
+      background-color: $primary-color;
+      border-radius: 20px;
       .menu__heading {
         font-family: "Cera Round Pro", sans-serif;
         font-style: normal;
