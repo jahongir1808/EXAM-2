@@ -92,6 +92,12 @@ input:focus {
   -webkit-animation: ldio-8gsj946k6k 1s linear infinite;
           animation: ldio-8gsj946k6k 1s linear infinite;
 }
+@media (max-width: 500px) {
+  .ldio-8gsj946k6k div > div {
+    width: 20px;
+    height: 20px;
+  }
+}
 
 .ldio-8gsj946k6k div:nth-child(1) > div {
   left: 148px;
@@ -205,6 +211,12 @@ input:focus {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transform-origin: 0 0; /* see note above */
+}
+@media (max-width: 500px) {
+  .ldio-8gsj946k6k {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .ldio-8gsj946k6k div {
