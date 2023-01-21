@@ -196,20 +196,16 @@
   background-size: cover;
   .video {
     .btnssss {
-      button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 100%;
-        img {
-          position: absolute;
-          top: 41% !important;
-          left: 45.3% !important;
-        }
-      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .btn-primary {
+      padding: 0 !important;
       color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: transparent;
       --bs-btn-border-color: 0 0;
       --bs-btn-hover-color: #fff;
