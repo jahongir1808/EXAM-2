@@ -17,6 +17,19 @@
         color: $primary-color;
       }
     }
+    .contact-heading {
+      h1 {
+        font-family: "Cera Round Pro", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        font-feature-settings: "tnum" on, "lnum" on;
+        color: $headingtwo-color;
+      }
+    }
     .contact-contacts {
       padding-top: 40px;
       display: grid;
@@ -134,6 +147,20 @@
           background: $primary-color;
           border-radius: 39px;
         }
+      }
+    }
+    .cotact-map {
+      margin-top: 110px;
+      .map-heading {
+        font-family: "Cera Round Pro", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.375rem;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        font-feature-settings: "tnum" on, "lnum" on;
+        color: #000000;
       }
     }
   }
