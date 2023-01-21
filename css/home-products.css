@@ -1200,19 +1200,17 @@ section::after {
   background-position: center;
   background-size: cover;
 }
-#video .video .btnssss button {
+#video .video .btnssss {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
-}
-#video .video .btnssss button img {
-  position: absolute;
-  top: 41% !important;
-  left: 45% !important;
 }
 #video .video .btn-primary {
+  padding: 0 !important;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   --bs-btn-border-color: 0 0;
   --bs-btn-hover-color: #fff;
